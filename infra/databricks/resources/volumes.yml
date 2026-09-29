@@ -1,0 +1,8 @@
+resources:
+  volumes:
+    inbox:
+      catalog_name: ${resources.catalogs.retail.name}
+      schema_name: ${resources.schemas.bronze.name}
+      name: inbox
+      volume_type: EXTERNAL
+      storage_location: ${resources.external_locations.retail_lakehouse.url}incoming

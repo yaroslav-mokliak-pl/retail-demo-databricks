@@ -1,0 +1,8 @@
+resources:
+  external_locations:
+    retail_lakehouse:
+      name: retail-lakehouse
+      url: s3://retail-demo-databricks/
+      credential_name: databricks-uc-7474644734553598-retail-lakehouse
+      lifecycle:
+        prevent_destroy: true

@@ -1,0 +1,8 @@
+resources:
+  catalogs:
+    retail:
+      name: retail
+      comment: Retail Lakehouse pet project
+      storage_root: ${resources.external_locations.retail_lakehouse.url}lakehouse
+      lifecycle:
+        prevent_destroy: true
