@@ -1,0 +1,14 @@
+bundle:
+  name: retail_lakehouse
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    presets:
+      name_prefix: ""
+    default: true
+    workspace:
+      host: https://dbc-80e28b7a-6c36.cloud.databricks.com
